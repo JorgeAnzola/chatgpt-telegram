@@ -91,7 +91,7 @@ func main() {
 		switch update.Message.Command() {
 		case "help":
 			text = "Send a message to start talking with ChatGPT. You can use /reload at any point to clear the conversation history and start from scratch (don't worry, it won't delete the Telegram messages)."
-		case "start":
+		case "startAI":
 			text = "Send a message to start talking with ChatGPT. You can use /reload at any point to clear the conversation history and start from scratch (don't worry, it won't delete the Telegram messages)."
 		case "reload":
 			chatGPT.ResetConversation(updateChatID)
